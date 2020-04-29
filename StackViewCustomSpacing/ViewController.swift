@@ -10,11 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var stackView: UIStackView!
+  @IBOutlet weak var secondLabel: UILabel!
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+
+    self.stackView.setCustomSpacing(32, after: self.secondLabel)
   }
-
-
 }
-
